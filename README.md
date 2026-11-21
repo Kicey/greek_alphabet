@@ -9,8 +9,9 @@ Open `index.html` in a browser. There are no dependencies or build steps.
 
 ## Publish with GitHub Pages
 
-1. Push the files to the repository's default branch.
-2. On GitHub, go to **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Select the default branch and **`/ (root)`**, then save. GitHub will show the
-   published URL on that page once deployment completes.
+1. On GitHub, go to **Settings → Pages → Build and deployment** and set
+   **Source** to **GitHub Actions**. No starter workflow is needed.
+2. Push the files to `main`. The included **Deploy GitHub Pages** workflow
+   publishes the static files on every push to `main`.
+3. If the files are already on `main`, go to **Actions → Deploy GitHub Pages →
+   Run workflow** and select `main` to deploy manually.
